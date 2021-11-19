@@ -147,9 +147,7 @@ img {
 /********HERO********/
 .hero {
   background-color: var(--background-color);
-  padding: 200px 452px;
-}
-.hero-container {
+  padding: 200px 0;
 }
 .headline {
   font-size: 44px;
@@ -159,7 +157,7 @@ img {
   text-transform: uppercase;
 
   color: var(--accent-color);
-
+display: block;
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
