@@ -8,9 +8,10 @@
 .container {
   margin: 0px auto;
   width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-,
-.body.main {
+.body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -148,6 +149,10 @@ img {
 .hero {
   background-color: var(--background-color);
   padding: 200px 0;
+  background-image: url(../images/background-hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0, 4), transparent);
+  background-position: center;
+  background-size: cover;
 }
 .headline {
   font-size: 44px;
@@ -195,7 +200,7 @@ img {
 }
 .advantages-list-item {
   margin-right: 30px;
-  min-width: 270px;
+  width: 270px;
 }
 .advantages-list-item:last-child {
   margin-right: 0px;
@@ -224,7 +229,6 @@ img {
 }
 /********WE-DOING********/
 .we-doing {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .we-doing-title {
@@ -245,13 +249,13 @@ img {
 /******** our-team********/
 .our-team {
   padding: 94px 0px;
+  background-color: #f5f4fa;
 }
 .our-team-title {
   margin-bottom: 50px;
 }
 .our-team-list {
   display: flex;
-  justify-content: center;
 }
 .our-team-item {
   margin-right: 30px;
@@ -359,6 +363,10 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 56px;
+  margin-right: 8px;
+}
+.button-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 .button {
   font-family: roboto;
@@ -368,7 +376,7 @@ img {
 
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-right: 8px;
+
   border: transparent;
 }
 
@@ -381,19 +389,24 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
 }
+
 .worklist-item {
-  margin-right: 8px;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
-.worklist-item {
-  margin-right: 0px;
+
+.worklist-item:nth-child(3n) {
+  margin-right: 0;
+}
+.worklist-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .worklist-item-box {
   padding: 20px 24px;
-  max-width: 370px;
+  width: 370px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
