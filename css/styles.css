@@ -250,9 +250,11 @@ display: block;
 }
 .our-team-list {
   display: flex;
+    justify-content: center;
 }
 .our-team-item {
   margin-right: 30px;
+
 }
 .our-team-item:last-child {
   margin-right: 0px;
@@ -381,6 +383,7 @@ display: block;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .worklist-item {
   margin-right: 8px;
